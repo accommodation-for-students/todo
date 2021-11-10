@@ -12,3 +12,17 @@ There is an existing controller `TodosController.cs`. Using whichever tooling yo
 - Description can't be empty
 - Description can't contain HTML or scripts
 - Get todos ordered by created date descending
+
+## Endpoints
+
+You can retrieve all todos by doing a `GET` to `http://localhost:5000/api/todos`.
+
+You can create a todo by doing a `POST` to `http://localhost:5000/api/todos`:
+
+```
+{
+    "title": ".NET 6 is available!",
+    "description": "Have a look at what's new in C# 10.",
+    "completed": true
+}
+```
